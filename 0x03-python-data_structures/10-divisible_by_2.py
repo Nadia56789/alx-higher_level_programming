@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-
-
-def max_integer(my_list=[]):
-    if len(my_list) == 0:
-        return
-
-    large = my_list[0]
-    for i in range(1, len(my_list)):
-        if large < my_list[i]:
-            large = my_list[i]
+def divisible_by_2(my_list=[]):
+    new_list = []
+    for i in my_list:
+        if i % 2 == 0:
+            new_list.append(True)
         else:
-            continue
-    return large
+            new_list.append(False)
+    return new_list
